@@ -1,0 +1,56 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+header, nav, main, footer {
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* GRID layout for main content */
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+/* FLEXBOX for nav */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header, nav, footer {
+    text-align: center;
+  }
+}
