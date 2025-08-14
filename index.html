@@ -7,40 +7,52 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Hero Section -->
   <header class="hero">
     <h1>Can You Trust What You See?</h1>
     <p>Exploring synthetic media’s influence on modern elections.</p>
   </header>
 
-  <section class="overview">
-    <h2>What Are Deepfakes?</h2>
-    <p>Deepfakes use AI to create deceptive media—manipulated videos, fake endorsements, and more. During elections, they pose serious risks to public trust.</p>
-  </section>
+  <!-- Main Container: Flex for content + sidebar -->
+  <div class="container" style="display: flex; flex-wrap: wrap; gap: 2rem; padding: 2rem;">
+    <!-- Main Content -->
+    <main style="flex: 1 1 60%; min-width: 300px;">
+      <!-- Overview Section -->
+      <section class="overview">
+        <h2>What Are Deepfakes?</h2>
+        <p>Deepfakes use AI to create deceptive media—manipulated videos, fake endorsements, and more. During elections, they pose serious risks to public trust.</p>
+      </section>
 
-  <section class="grid-cards">
-    <div class="card">🕵️‍♂️ Fake Endorsements</div>
-    <div class="card">🧠 Voter Manipulation</div>
-    <div class="card">📉 Character Defamation</div>
-  </section>
+      <!-- Grid Cards -->
+      <section class="grid-cards">
+        <div class="card">🕵️‍♂️ Fake Endorsements</div>
+        <div class="card">🧠 Voter Manipulation</div>
+        <div class="card">📉 Character Defamation</div>
+      </section>
 
-  <section class="policy-lab">
-    <h2>Detection Layers</h2>
-    <ul>
-      <li class="rumor">Content-Only (Rumors)</li>
-      <li class="padded">Verified Sources</li>
-      <li class="bordered">Forensic Tools</li>
-    </ul>
-  </section>
+      <!-- Policy Lab -->
+      <section class="policy-lab">
+        <h2>Detection Layers</h2>
+        <ul>
+          <li class="rumor">Content-Only (Rumors)</li>
+          <li class="padded">Verified Sources</li>
+          <li class="bordered">Forensic Tools</li>
+        </ul>
+      </section>
+    </main>
 
-  <aside class="sidebar">
-    <h2>Voter Tips</h2>
-    <ul>
-      <li>Verify before sharing</li>
-      <li>Check image metadata</li>
-      <li>Use trusted news sources</li>
-    </ul>
-  </aside>
+    <!-- Sidebar -->
+    <aside class="sidebar" style="flex: 1 1 30%; min-width: 200px;">
+      <h2>Voter Tips</h2>
+      <ul>
+        <li>Verify before sharing</li>
+        <li>Check image metadata</li>
+        <li>Use trusted news sources</li>
+      </ul>
+    </aside>
+  </div>
 
+  <!-- Footer -->
   <footer>
     <p>Built to expose synthetic deception • © 2025</p>
   </footer>
